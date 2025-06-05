@@ -1,0 +1,109 @@
+{
+    "data": [
+        {
+            "original_text": " Air condition on.",
+            "nlp_text": "Air condition on",
+            "device": "air condition",
+            "flag": "correct",
+            "time": "17:23:38"
+        },
+        {
+            "original_text": " Alarm please off.",
+            "nlp_text": "Alarm",
+            "device": "alarm",
+            "flag": "incorrect",
+            "time": "17:24:21"
+        },
+        {
+            "original_text": " Alarm On!",
+            "nlp_text": "Alarm On",
+            "device": "alarm",
+            "flag": "correct",
+            "time": "18:52:44"
+        },
+        {
+            "original_text": " Alarm off.",
+            "nlp_text": "Alarm off",
+            "device": "alarm",
+            "flag": "correct",
+            "time": "19:18:21"
+        },
+        {
+            "original_text": " Alarm hello",
+            "nlp_text": "Alarm",
+            "device": "alarm",
+            "flag": "incorrect",
+            "time": "19:18:30"
+        },
+        {
+            "original_text": " Alarm on.",
+            "nlp_text": "Alarm on",
+            "device": "alarm",
+            "flag": "correct",
+            "time": "19:18:42"
+        },
+        {
+            "original_text": " My name is Air Condition.",
+            "nlp_text": "Air Condition",
+            "device": "air condition",
+            "flag": "incorrect",
+            "time": "19:20:35"
+        },
+        {
+            "original_text": " Hello, air condition.",
+            "nlp_text": "air condition",
+            "device": "air condition",
+            "flag": "incorrect",
+            "time": "19:21:09"
+        },
+        {
+            "original_text": " air condition of now",
+            "nlp_text": "air condition",
+            "device": "air condition",
+            "flag": "incorrect",
+            "time": "19:22:17"
+        },
+        {
+            "original_text": " Air condition of now.",
+            "nlp_text": "Air condition",
+            "device": "air condition",
+            "flag": "incorrect",
+            "time": "19:23:36"
+        },
+        {
+            "original_text": " Alarm on.",
+            "nlp_text": "Alarm on",
+            "device": "alarm",
+            "flag": "correct",
+            "time": "19:28:45"
+        },
+        {
+            "original_text": " What's up Alarm?",
+            "nlp_text": "Alarm",
+            "device": "alarm",
+            "flag": "incorrect",
+            "time": "19:28:58"
+        },
+        {
+            "original_text": " Hello Alarm.",
+            "nlp_text": "Alarm",
+            "device": "alarm",
+            "flag": "incorrect",
+            "time": "19:29:06"
+        },
+        {
+            "original_text": " Alarm, what are you doing?",
+            "nlp_text": "Alarm",
+            "device": "alarm",
+            "flag": "incorrect",
+            "time": "19:29:26"
+        },
+        {
+            "original_text": " Alarm, what are you doing?",
+            "nlp_text": "Alarm",
+            "device": "alarm",
+            "flag": "incorrect",
+            "time": "19:29:46"
+        }
+    ]
+}
