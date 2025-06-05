@@ -1,0 +1,130 @@
+{
+    "data": [
+        {
+            "original_text": " Alarm on.",
+            "nlp_text": "Alarm on",
+            "device": "alarm",
+            "flag": "correct",
+            "time": "01:10:46"
+        },
+        {
+            "original_text": " Alarm off.",
+            "nlp_text": "Alarm off",
+            "device": "alarm",
+            "flag": "correct",
+            "time": "23:16:36"
+        },
+        {
+            "original_text": " alarm",
+            "nlp_text": "alarm",
+            "device": "alarm",
+            "flag": "incorrect",
+            "time": "23:16:57"
+        },
+        {
+            "original_text": " Air condition 20 degrees.",
+            "nlp_text": "Air condition 20 degrees",
+            "device": "air condition",
+            "flag": "correct",
+            "time": "17:26:17"
+        },
+        {
+            "original_text": " Air condition 24 degrees.",
+            "nlp_text": "Air condition 24 degrees",
+            "device": "air condition",
+            "flag": "correct",
+            "time": "17:26:29"
+        },
+        {
+            "original_text": " Alarm on!",
+            "nlp_text": "Alarm on",
+            "device": "alarm",
+            "flag": "correct",
+            "time": "17:27:52"
+        },
+        {
+            "original_text": " Alarm on.",
+            "nlp_text": "Alarm on",
+            "device": "alarm",
+            "flag": "correct",
+            "time": "17:28:02"
+        },
+        {
+            "original_text": " Alarm on!",
+            "nlp_text": "Alarm on",
+            "device": "alarm",
+            "flag": "correct",
+            "time": "17:28:11"
+        },
+        {
+            "original_text": " Alarm off.",
+            "nlp_text": "Alarm off",
+            "device": "alarm",
+            "flag": "correct",
+            "time": "17:28:32"
+        },
+        {
+            "original_text": " Alarm in 25 minutes.",
+            "nlp_text": "Alarm in 25 minutes",
+            "device": "alarm",
+            "flag": "correct",
+            "time": "17:28:55"
+        },
+        {
+            "original_text": " Alarm activate motion detection.",
+            "nlp_text": "Alarm activate motion detection",
+            "device": "alarm",
+            "flag": "correct",
+            "time": "17:29:22"
+        },
+        {
+            "original_text": " Alarm deactivate motion detection.",
+            "nlp_text": "Alarm deactivate motion detection",
+            "device": "alarm",
+            "flag": "correct",
+            "time": "17:29:42"
+        },
+        {
+            "original_text": " Air condition on",
+            "nlp_text": "Air condition on",
+            "device": "air condition",
+            "flag": "correct",
+            "time": "17:31:12"
+        },
+        {
+            "original_text": " Air condition 24 degrees",
+            "nlp_text": "Air condition 24 degrees",
+            "device": "air condition",
+            "flag": "correct",
+            "time": "17:31:59"
+        },
+        {
+            "original_text": " air condition off in 17 minutes",
+            "nlp_text": "air condition off in 17 minutes",
+            "device": "air condition",
+            "flag": "correct",
+            "time": "17:32:16"
+        },
+        {
+            "original_text": " Air condition heat",
+            "nlp_text": "Air condition heat",
+            "device": "air condition",
+            "flag": "correct",
+            "time": "17:32:32"
+        },
+        {
+            "original_text": " Alarm on!",
+            "nlp_text": "Alarm on",
+            "device": "alarm",
+            "flag": "correct",
+            "time": "17:36:12"
+        },
+        {
+            "original_text": " alarm",
+            "nlp_text": "alarm",
+            "device": "alarm",
+            "flag": "incorrect",
+            "time": "23:16:57"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1254bebf.css",
+    "main.js": "/static/js/main.c4e09fd2.js",
+    "static/js/453.c5eaf93b.chunk.js": "/static/js/453.c5eaf93b.chunk.js",
+    "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
+    "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
+    "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
+    "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
+    "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
+    "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.bc3722686635b5f86132.woff2",
+    "static/media/clock.png": "/static/media/clock.dc550a9f52c407d30fa5.png",
+    "static/media/snowflake.png": "/static/media/snowflake.83c9aa261bdcebc070e0.png",
+    "static/media/hot.png": "/static/media/hot.cdab1258846d8fcd983b.png",
+    "static/media/thermometer.png": "/static/media/thermometer.84e7bdf6d797e6d70c29.png",
+    "static/media/battery.png": "/static/media/battery.5f8c0cf0d3b3a007c000.png",
+    "static/media/letter-a.png": "/static/media/letter-a.e5c0bec3fe1efb56233f.png",
+    "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
+    "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
+    "index.html": "/index.html",
+    "main.1254bebf.css.map": "/static/css/main.1254bebf.css.map",
+    "main.c4e09fd2.js.map": "/static/js/main.c4e09fd2.js.map",
+    "453.c5eaf93b.chunk.js.map": "/static/js/453.c5eaf93b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1254bebf.css",
+    "static/js/main.c4e09fd2.js"
+  ]
+}
