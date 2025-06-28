@@ -394,40 +394,32 @@ def process_text(result):
 
 
     def on_match_pattern_2f(matcher_for_alarm, doc, i, matches_for_alarm):  # pattern_2f
-        # Load existing data from the JSON file
         print("Pattern 2f triggered")  # Add this print statement
-        with open(
-            alarm_file_path,
-            "r",
-        ) as file:
+        with open(alarm_file_path, "r") as file:
             data = json.load(file)
 
-            data["motion_detection"] = "activated"  # Change this to the desired value
+        if data.get("on_off", "").lower() == "on":  # Only proceed if alarm is ON
+            data["motion_detection"] = "activated"
+            with open(alarm_file_path, "w") as file:
+                json.dump(data, file, indent=4)
+            print("Motion detection activated.")
+        else:
+            print("Alarm is OFF. Motion detection not activated.")
 
-        with open(
-            alarm_file_path,
-            "w",
-        ) as file:
-            json.dump(data, file, indent=4)
-            # Write the updated data back to the JSON file
 
     def on_match_pattern_2g(matcher_for_alarm, doc, i, matches_for_alarm):  # pattern_2g
-        # Load existing data from the JSON file
         print("Pattern 2g triggered")  # Add this print statement
-        with open(
-            alarm_file_path,
-            "r",
-        ) as file:
+        with open(alarm_file_path, "r") as file:
             data = json.load(file)
 
-            data["motion_detection"] = "deactivated"  # Change this to the desired value
+        if data.get("on_off", "").lower() == "on":  # Only proceed if alarm is ON
+            data["motion_detection"] = "deactivated"
+            with open(alarm_file_path, "w") as file:
+                json.dump(data, file, indent=4)
+            print("Motion detection deactivated.")
+        else:
+            print("Alarm is OFF. Motion detection not deactivated.")
 
-        with open(
-            alarm_file_path,
-            "w",
-        ) as file:
-            json.dump(data, file, indent=4)
-            # Write the updated data back to the JSON file
 
     matcher_for_air_condition = Matcher(nlp.vocab)
     matcher_for_alarm = Matcher(nlp.vocab)

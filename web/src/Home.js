@@ -7,7 +7,7 @@ function Home() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch('http://192.168.96.150:5000/text'); // Direct URL
+      const response = await fetch('http://192.168.1.7:5000/text'); // Direct URL
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
@@ -22,7 +22,7 @@ function Home() {
     fetchData();
 
     // Establish SSE connection
-    const eventSource = new EventSource('http://192.168.96.150:5000/stream'); // Direct URL
+    const eventSource = new EventSource('http://192.168.1.7:5000/stream'); // Direct URL
 
     eventSource.onmessage = (event) => {
       try {

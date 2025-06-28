@@ -11,7 +11,7 @@ export function AirCondition({ pageTitle }) {
   const [filteredData, setFilteredData] = useState(null); // Για το table
   const [error, setError] = useState(null);
 
-  const apiBaseUrl = 'http://192.168.96.150:5000';
+  const apiBaseUrl = 'http://192.168.1.7:5000';
 
   // Polling για τις κάρτες
   useEffect(() => {

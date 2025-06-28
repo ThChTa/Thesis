@@ -8,7 +8,7 @@ export function Alarm({ pageTitle }) {
   const [filteredData, setFilteredData] = useState(null); // For table (SSE)
   const [error, setError] = useState(null);
 
-  const apiBaseUrl = 'http://192.168.96.150:5000';
+  const apiBaseUrl = 'http://192.168.1.7:5000';
 
   // Polling για κάρτες (alarm info)
   useEffect(() => {
