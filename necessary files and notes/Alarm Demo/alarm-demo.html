@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Alarm Demo</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    h1 {
+      color: #1e3a8a;
+      margin-bottom: 25px;
+      font-size: 24px;
+    }
+
+    .status {
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .label {
+      font-weight: bold;
+      color: #2563eb;
+    }
+
+    .value {
+      font-weight: bold;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .on {
+      color: #16a34a; /* πράσινο */
+    }
+
+    .off {
+      color: #dc2626; /* κόκκινο */
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Alarm System Status</h1>
+    <div class="status">
+      <span class="label">Power:</span>
+      <span class="value" id="on_off">-</span>
+    </div>
+    <div class="status">
+      <span class="label">Battery:</span>
+      <span class="value" id="battery">-</span>%
+    </div>
+    <div class="status">
+      <span class="label">Timer:</span>
+      <span class="value" id="timer">-</span>s
+    </div>
+    <div class="status">
+      <span class="label">Motion Detection:</span>
+      <span class="value" id="motion_detection">-</span>
+    </div>
+  </div>
+
+  <script>
+    async function fetchData() {
+      try {
+        const response = await fetch('alarm.json?cache=' + new Date().getTime());
+        const data = await response.json();
+
+        // Power
+        const powerValue = data.on_off.toLowerCase();
+        const powerEl = document.getElementById("on_off");
+        powerEl.textContent = powerValue.toUpperCase();
+        powerEl.className = "value " + (powerValue === "on" ? "on" : "off");
+
+        // Battery
+        document.getElementById("battery").textContent = data.battery;
+
+        // Timer
+        document.getElementById("timer").textContent = data.timer;
+
+        // Motion Detection
+        const motionValue = data.motion_detection.toLowerCase();
+        const motionEl = document.getElementById("motion_detection");
+        motionEl.textContent = motionValue.charAt(0).toUpperCase() + motionValue.slice(1);
+        motionEl.className = "value " + (motionValue === "activated" ? "on" : "off");
+
+      } catch (err) {
+        console.error("Error fetching data:", err);
+      }
+    }
+
+    setInterval(fetchData, 1000);
+    fetchData();
+  </script>
+</body>
+</html>
