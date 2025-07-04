@@ -125,6 +125,27 @@
             "device": "alarm",
             "flag": "correct",
             "time": "16:44:42"
+        },
+        {
+            "original_text": " Alarm on.",
+            "nlp_text": "Alarm on",
+            "device": "alarm",
+            "flag": "correct",
+            "time": "16:53:09"
+        },
+        {
+            "original_text": " Alarm off.",
+            "nlp_text": "Alarm off",
+            "device": "alarm",
+            "flag": "correct",
+            "time": "16:53:17"
+        },
+        {
+            "original_text": " Alarm on!",
+            "nlp_text": "Alarm on",
+            "device": "alarm",
+            "flag": "correct",
+            "time": "16:54:17"
         }
     ]
 }
