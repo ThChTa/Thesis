@@ -9,10 +9,10 @@ from spacy.matcher import Matcher
 # Function to process the text with the matchers
 def process_text(result):
 
-    data_file_path = "C:\\Users\\Thomas\\Desktop\\whisper_mic\\whisper_mic\\data.json"
-    alarm_file_path = "C:\\Users\\Thomas\\Desktop\\whisper_mic\\whisper_mic\\alarm.json"
+    data_file_path = "C:\\Users\\Thomas\\Desktop\\Thesis\\whisper_mic\\whisper_mic\\data.json"
+    alarm_file_path = "C:\\Users\\Thomas\\Desktop\\Thesis\\whisper_mic\\whisper_mic\\alarm.json"
     air_condition_file_path = (
-        "C:\\Users\\Thomas\\Desktop\\whisper_mic\\whisper_mic\\air_condition.json"
+        "C:\\Users\\Thomas\\Desktop\\Thesis\\whisper_mic\\whisper_mic\\air_condition.json"
     )
 
     nlp = spacy.load("en_core_web_sm")
