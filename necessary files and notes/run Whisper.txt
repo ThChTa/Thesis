@@ -1,0 +1,9 @@
+--- Τα παρακάτω τα τρέχω σε Anaconda Prompt για το Whisper ---
+
+cd .../whisper_mic/whisper_mic
+
+conda activate whisper_mic
+
+python cli.py --loop --english --model small --save_file
+
+
